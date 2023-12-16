@@ -13,7 +13,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		{"push", push}, {"pall", pall}, {"pint", pint},
 		{"pop", pop},
 		{"swap", swap},
-		/*{"add", add},*/
+		{"add", add},
 		{"nop", nop},
 		/*{"sub", sub},*/ 
 		/*{"div", div},*/ 
