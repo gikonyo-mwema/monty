@@ -1,7 +1,4 @@
 #include "monty.h"
-
-extern bus_t bus; /* Assuming bus_t is declared in another file */
-
 /**
  * pop - removes the top element of the stack
  * @stack: pointer to the top of the stack
@@ -10,6 +7,7 @@ extern bus_t bus; /* Assuming bus_t is declared in another file */
  */
 void pop(stack_t **stack, unsigned int line_number)
 {
+	bus_t bus;
 	stack_t *temp;
 
 	if (*stack == NULL)
