@@ -16,15 +16,15 @@ instruction_t opst[] = {
 {"add", add},
 {"nop", nop},
 {"sub", sub},
-{"div", div},
+/*{"div", div},*/
 {"mul", mul},
-{"mod", mod},
-{"pchar", pchar},
-{"pstr", pstr},
-{"rotl", rotl},
-{"rotr", rotr},
+/*{"mod", mod},*/
+/*{"pchar", pchar},*/
+/*{"pstr", pstr},*/
+/*{"rotl", rotl},*/
+/*{"rotr", rotr},*/
 {"queue", queue},
-{"stack", stack},
+/*{"stack", stack},*/
 {NULL, NULL}
 };
 unsigned int i = 0;

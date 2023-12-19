@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/types.h>
-
+/**                                                                                                                                                                      * struct bus_s - struct for handling various operations                                                                                                                 * @arg: argument string                                                                                                                                                 * @file: file pointer                                                                                                                                                   * @content: content string                                                                                                                                              * @lifi: integer flag                                                                                                                                                   *                                                                                                                                                                       * Description: struct for handling various operations                                                                                                                   */                                                                                                                                                                     typedef struct bus_s                                                                                                                                                    {                                                                                                                                                                           char *arg;                                                                                                                                                              FILE *file;                                                                                                                                                             char *content;                                                                                                                                                          int lifi;                                                                                                                                                           } bus_t;                                                                                                                                                                                                                                                                                                                                        extern bus_t bus;      
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -36,24 +36,7 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-/**
- * struct bus_s - struct for handling various operations
- * @arg: argument string
- * @file: file pointer
- * @content: content string
- * @lifi: integer flag
- *
- * Description: struct for handling various operations
- */
-typedef struct bus_s
-{
-    char *arg;
-    FILE *file;
-    char *content;
-    int lifi;
-} bus_t;
 
-extern bus_t bus;
 
 /* Function Prototypes */
 void pop(stack_t **stack, unsigned int line_number);
@@ -66,4 +49,10 @@ void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void add(stack_t **head, unsigned int counter);
+void sub(stack_t **head, unsigned int counter);
+void queue(stack_t **head, unsigned int counter);
+void addqueue(stack_t **head, int n);
+void stack(stack_t **head, unsigned int counter);
+/*void sub(stack_t **head, unsigned int counter)*/
+void mul(stack_t **head, unsigned int counter);
 #endif

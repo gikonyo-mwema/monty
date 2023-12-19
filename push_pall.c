@@ -9,6 +9,7 @@
  */
 void push(stack_t **stack, unsigned int line_number)
 {
+	bus_t bus = { NULL, NULL, NULL, 0};
 	stack_t *new_node;
 	int n, j = 0, flag = 0;
 

@@ -7,7 +7,7 @@
  */
 void pint(stack_t **stack, unsigned int line_number)
 {
-	bus_t bus;
+	/*bus_t bus;*/
 
 	if (*stack == NULL)
 	{

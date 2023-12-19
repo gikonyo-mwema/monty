@@ -1,4 +1,5 @@
 #include "monty.h"
+bus_t bus = { NULL, NULL, NULL, 0};
 /**
 * main - monty code interpreter
 * @argc: number of arguments
@@ -7,7 +8,7 @@
 */
 int main(int argc, char *argv[])
 {
-bus_t bus;
+/*bus_t bus = { NULL, NULL, NULL, 0};*/
 char *content;
 FILE *file;
 size_t size = 0;
@@ -21,7 +22,7 @@ fprintf(stderr, "USAGE: monty file\n");
 exit(EXIT_FAILURE);
 }
 file = fopen(argv[1], "r");
-bus.file = file;
+/*bus.file = file;*/
 if (!file)
 {
 fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
